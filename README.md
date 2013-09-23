@@ -3,6 +3,13 @@ Teaching-MSE-OpenSourceFrameworks
 
 Repository for the Open Source Framework course taught at the HES-SO.
 
+
+Wiki
+----
+
+* [home](https://github.com/wasadigi/Teaching-MSE-OpenSourceFrameworks/wiki)
+* [teams](https://github.com/wasadigi/Teaching-MSE-OpenSourceFrameworks/wiki/Teams-%282013-2014%29)
+
 References
 ----------
 
