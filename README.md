@@ -7,8 +7,9 @@ Repository for the Open Source Framework course taught at the HES-SO.
 Wiki
 ----
 
-* [home](https://github.com/wasadigi/Teaching-MSE-OpenSourceFrameworks/wiki)
-* [teams](https://github.com/wasadigi/Teaching-MSE-OpenSourceFrameworks/wiki/Teams-%282013-2014%29)
+* [Home](https://github.com/wasadigi/Teaching-MSE-OpenSourceFrameworks/wiki)
+* [Teams](https://github.com/wasadigi/Teaching-MSE-OpenSourceFrameworks/wiki/Teams-%282013-2014%29)
+* [Document your REST API] https://github.com/wasadigi/Teaching-MSE-OpenSourceFrameworks/wiki/How-to-document-your-REST-API%3F
 
 References
 ----------
