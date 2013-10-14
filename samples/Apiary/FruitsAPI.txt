@@ -1,0 +1,102 @@
+FORMAT: X-1A
+
+# Introduction
+This is an introduction section, where you should describe the overall purpose of the API and some of the important concepts and abstractions.
+
+<!-- == RESOURCE GROUP: Fruit and Fruits Collection ======================================================================== -->
+
+# Group Fruit
+In my domain model, I am dealing with fruits. I have two distinct resources in that context. The first resource is the `Fruit` resource, which represent a single fruit (a banana, an apple or a kiwi). The second resource the `Fruits Collection` resource, which represents a collection of fruits (in other words, 0, 1 or many fruits).
+
+
+## Fruit [/fruits/{id}]
+
+A Fruit is something that you can eat and that is delicious. This is just an example to show that in the API documentation, we have a place where we can describe the resource types, which are in essence the elements of our domain models. 
+
+
+<!-- We can describe parameters and reference them in method calls, later in the document -->
+
++ Parameters
+
+    + id (number, `1`) ... An identifier that uniquely identifies a `Fruit`.
+
+
++ Model (application/json)
+
+    This is the `application/json` message resource representation.
+
+    + Body
+    
+            {
+              "name": "banana",
+              "properties": { 
+                    "color": "yellow" 
+              }
+            }
+
+
+### Retrieve a Fruit [GET]
+This method is used to retrieve a `Fruit` resource by specifying its unique id. Note that we reference the resource model in the `Response 200` block.
+
++ Response 200
+
+    [Fruit][]
+
+### Update a Fruit [PUT]
+This method is used to update a `Fruit` resource by specifying its unique id and sending a new representation.
+
++ Request Update JSON Message (application/json)
+
+    [Fruit][]
+
++ Response 204
+
+### Delete a Fruit [DELETE]
+This method is used to delete a `Fruit` resource by specifying its unique id.
+
++ Response 204
+
+
+## Fruits Collection [/fruits/]
+
+A Fruits Collection is a list of fruits.
+
++ Model (application/json)
+
+    This is the `application/json` message resource representation.
+
+    + Body
+    
+            [
+                {
+                    "name": "banana",
+                    "properties": { 
+                        "color": "yellow" 
+                    }
+                },
+                {
+                    "name": "apple",
+                    "properties": { 
+                        "color": "red" 
+                    }
+                },
+                {
+                    "name": "orange",
+                    "properties": { 
+                        "color": "blue" 
+                    }
+                }
+            ]
+                
+### Retrieve a list of Fruits [GET]
+This method is used to retrieve a `List of Fruit` resource. Note that we reference the resource model in the `Response 200` block.
+
++ Response 200
+
+    [Fruits Collection][]
+
+
+
+
+
+
