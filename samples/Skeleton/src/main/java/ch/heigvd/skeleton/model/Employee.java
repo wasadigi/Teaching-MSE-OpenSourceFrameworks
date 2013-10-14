@@ -5,26 +5,50 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 
 /**
- * This class is an example for a simple JPA entity. Notice that there is a 'salary' property,
- * which is sensitive and which we do not want to expose to everyone. That is one reason why we 
- * do not want to use this class directly from the REST tier (and instead use specific Transfer
- * Objects).
- * 
+ * This class is an example for a simple JPA entity. Notice that there is a
+ * 'salary' property, which is sensitive and which we do not want to expose to
+ * everyone. That is one reason why we do not want to use this class directly
+ * from the REST tier (and instead use specific Transfer Objects).
+ *
  * @author Olivier Liechti
  */
+@NamedQueries(
+				@NamedQuery(
+								name = "findAllEmployees",
+								query = "SELECT e FROM Employee e"
+				)
+)
+
 @Entity
 public class Employee implements Serializable {
+
 	private static final long serialVersionUID = 1L;
 	@Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	
+
 	private String firstName;
 	private String lastName;
 	private String email;
 	private double salary;
+
+	public Employee() {
+		firstName = "UNDEF";
+		lastName = "UNDEF";
+		email = "UNDEF";
+		salary = -1;
+	}
+
+	public Employee(Employee employeeData) {
+		this.firstName = employeeData.firstName;
+		this.lastName = employeeData.lastName;
+		this.email = employeeData.email;
+		this.salary = employeeData.salary;
+	}
 
 	public Long getId() {
 		return id;
@@ -90,5 +114,5 @@ public class Employee implements Serializable {
 	public String toString() {
 		return "ch.heigvd.skeleton.model.Employee[ id=" + id + " ]";
 	}
-	
+
 }

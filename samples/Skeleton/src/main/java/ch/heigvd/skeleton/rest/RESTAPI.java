@@ -17,6 +17,7 @@ public class RESTAPI extends Application {
 	public Set<Class<?>> getClasses() {
 		final Set<Class<?>> classes = new HashSet<Class<?>>();
 		// register root resources/providers
+		classes.add(ApplicationExceptionMapper.class);
 		classes.add(EmployeesResource.class);
 		return classes;
 	}

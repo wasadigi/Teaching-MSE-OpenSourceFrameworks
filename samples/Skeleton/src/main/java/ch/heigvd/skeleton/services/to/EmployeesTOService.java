@@ -15,5 +15,13 @@ public class EmployeesTOService implements EmployeesTOServiceLocal {
 		PublicEmployeeTO to = new PublicEmployeeTO(source.getId(), source.getFirstName(), source.getLastName(), source.getEmail());
 		return to;
 	}
+
+	@Override
+	public void updateEmployeeEntity(Employee existingEntity, PublicEmployeeTO newState) {
+		existingEntity.setFirstName(newState.getFirstName());
+		existingEntity.setLastName(newState.getLastName());
+		existingEntity.setEmail(newState.getEmail());		
+	}
+	
 	
 }
