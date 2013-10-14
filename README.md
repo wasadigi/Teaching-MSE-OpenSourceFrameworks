@@ -9,7 +9,7 @@ Wiki
 
 * [Home](https://github.com/wasadigi/Teaching-MSE-OpenSourceFrameworks/wiki)
 * [Teams](https://github.com/wasadigi/Teaching-MSE-OpenSourceFrameworks/wiki/Teams-%282013-2014%29)
-* [Document your REST API] https://github.com/wasadigi/Teaching-MSE-OpenSourceFrameworks/wiki/How-to-document-your-REST-API%3F
+* [Document your REST API](https://github.com/wasadigi/Teaching-MSE-OpenSourceFrameworks/wiki/How-to-document-your-REST-API%3F)
 
 References
 ----------
