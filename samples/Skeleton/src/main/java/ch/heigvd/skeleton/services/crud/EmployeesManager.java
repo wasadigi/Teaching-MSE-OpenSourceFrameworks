@@ -16,7 +16,7 @@ import javax.persistence.PersistenceContext;
 @Stateless
 public class EmployeesManager implements EmployeesManagerLocal {
 
-	@PersistenceContext(unitName = "ch.heigvd_Skeleton_war_1.0-SNAPSHOTPU")
+	@PersistenceContext
 	private EntityManager em;
 
 	@Override
