@@ -8,7 +8,8 @@ Wiki
 ----
 
 * [Home](https://github.com/wasadigi/Teaching-MSE-OpenSourceFrameworks/wiki)
-* [Teams](https://github.com/wasadigi/Teaching-MSE-OpenSourceFrameworks/wiki/Teams-%282013-2014%29)
+* [Teams for First Project](https://github.com/wasadigi/Teaching-MSE-OpenSourceFrameworks/wiki/Teams-%282013-2014%29)
+* [Teams for Second Project](https://github.com/wasadigi/Teaching-MSE-OpenSourceFrameworks/wiki/Teams-POC-%282013-2014%29)
 * [Document your REST API](https://github.com/wasadigi/Teaching-MSE-OpenSourceFrameworks/wiki/How-to-document-your-REST-API%3F)
 
 References
